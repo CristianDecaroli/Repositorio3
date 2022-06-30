@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@800&family=Lato:wght@300&display=swap');
+
+html {
+    font-family: 'Arima Madurai', cursive;
+    font-size: 62.5%;
+    color: rgb(36, 35, 35);
+}
+
+body {
+    background-color: #eafcfec0;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.h1-titulo {
+    background-color: #fae4e6;
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+h2 {
+    background-color: #fae4e6;
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+main p {
+    font-size: 3rem;
+    line-height: 5rem;
+}
+
+.p-staff {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+
+nav {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+#botonera {
+    background-color: rgb(245, 178, 187);
+    padding-right: 3rem;
+}
+
+
+header {
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(250,228,230,1) 0%, rgba(184,245,246,1) 100%);
+}
+
+    header img {
+        height: 90%;
+        width: auto;
+    }
+
+section div img {
+    height: 350px;
+    width: 350px;
+}
+
+footer {
+    background-color: rgb(245, 178, 187);
+    font-size: 1.5rem;
+}
+
+footer img {
+    height: 4rem;
+    height: 4rem;
+}
+
+#section-background {
+    background-color: #fff7f8;
+}
+
+/* 
+
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@800&family=Lato:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Arima Madurai', cursive;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    color: rgb(36, 35, 35);
+}
+
+body {
+    background-color:rgb(245, 178, 187);
+}
+
+.logo-coral-svg {
+    display: none;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 5rem;
+    font-weight: 700;
+}
+
+.p1-background {
+    background-color: #fae4e6;
+}
+
+.div-center {
+    display:inline-block;
+}
+
+.div-center2 {
+    display: flex;
+    padding-left: 5vw;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.p-padding {
+    padding-left: 5vw;
+}
+
+.h1-ubi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
+
+/* ANIMACIONES Y TRANSFORMACIONES */ 
+
+/*
+
+footer {
+    background: linear-gradient(90deg, rgba(250,228,230,1) 0%, rgba(184,245,246,1) 100%);
+}
+
+.rotate:hover {
+    transform: rotateZ(-360deg);
+    transition: 2s;
+}
+
+@keyframes opacity {
+    from{opacity: 0}
+    to{opacity: 1}
+}
+
+html {
+    animation-name: opacity;
+    animation-duration: 3s;
+}
+
+header {
+    animation-name: headerAnimation;
+    animation-duration: 2s;
+    background-size: cover;
+}
+
+@keyframes headerAnimation {
+    0%{background-image: url(../images/Portada2.jpg);}
+    80%{background-image: url(../images/Portada3.jpg);}
+}
+
+/* ========================== INDEX =============================*/
+
+/*
+.grid-conteiner {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5vh 25vh auto 160vh 30vh;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "main"
+    "aside"
+    "pie";
+}
+
+.nav {
+    background-color: rgb(245, 178, 187);
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+    .nav ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+        .nav ul li {
+            margin-right: 1rem;
+            margin-left: 1rem;
+        }
+            .nav ul li a {
+                text-decoration: none;
+                color: #464952;
+            }
+
+
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-image: url(../images/Portada3.jpg);
+    background-size: cover;
+}
+
+    .header img {
+        height: 90%;
+        width: auto;
+        padding-top: 5%;
+        padding-bottom: 5%
+    }
+
+
+.main {
+    background-color: #eafcfe;
+    grid-area: main;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.main p {
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+
+.aside {
+    background-color: #fff7f8;
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+    .aside img {
+        height:  300px;
+        width: 300px;
+    }
+
+.footer {
+    background-color: rgb(245, 178, 187);
+    grid-area: pie;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+    .footer a {
+        text-decoration: none;
+        color: black;
+        display: flex;
+        flex-direction: row;
+    }
+
+        .footer a img {
+            height: 4rem;
+            height: 4rem;
+        }
+
+    .footer-div {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+/*----------------------------------------------------------------*/
+
+/*
+@media only screen and (min-width: 768px) {
+    .grid-conteiner {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 5vh 30vh auto 30vh;
+        grid-template-areas: 
+        "nav nav nav"
+        "header header header"
+        "main main aside"
+        "pie pie pie";
+    }
+
+    .nav ul li {
+        font-size: 2rem;
+    }
+
+    .h1-index {
+        padding: 5%;
+        font-size: 5rem;
+    }
+
+    .main p {
+        padding: 10%;
+        font-size: 3rem;
+    }
+
+    .aside img {
+        height:  25rem;
+        width: 25rem;
+    }
+}
+
+
+/* ===========================UBICACION=========================== */
+
+/*
+.nav-ubi {
+    height: 5vh;
+    width: 100vw;
+    background-color: rgb(245, 178, 187);
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+    .nav-ubi ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+        .nav-ubi ul li {
+            margin-right: 1rem;
+            margin-left: 1rem;
+        }
+            .nav-ubi ul li a {
+                text-decoration: none;
+                color: #464952;
+            }
+
+.header-ubi {
+    height: 25vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-image: url(../images/Portada3.jpg);
+    background-size: cover;
+}
+
+    .img-header {
+        height: 90%;
+        width: auto;
+        padding-top: 5%;
+        padding-bottom: 5%
+    }
+
+.footer-ubi {
+    height: 25vh;
+    width: 100vw;
+    background-color: rgb(245, 178, 187);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+    .footer-ubi a {
+        text-decoration: none;
+        color: black;
+        display: flex;
+        flex-direction: row;
+    }
+
+        .footer-ubi a img {
+            height: 4rem;
+            height: 4rem;
+        }
+
+.grid-conteiner_ubi {
+    height: auto;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "articleU"
+    "iframeU"
+    "formU";
+}
+
+.grid-contacto {
+    background-color: #eafcfe;
+    grid-area: articleU;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2rem;
+}
+    .grid-contacto img{
+        height: 5rem;
+        width: 5rem;
+    }
+
+.grid-iframe {
+    background-color: #fae4e6;
+    grid-area: iframeU;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    iframe {
+        height: 30rem;
+        width: 90vw;
+    }
+
+
+.grid-form {
+    background-color: #eafcfe;
+    grid-area: formU;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5vw;
+    font-size: 2rem;
+}
+
+
+/*--------------------------------------------------------------*/
+
+/*
+@media only screen and (min-width: 1024px) {
+    .grid-conteiner_ubi {
+        background-color: #eafcfe;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "iframeU articleU"
+        "iframeU formU";
+    }
+        
+        .nav-ubi ul li {
+            font-size: 2rem;
+        }
+
+        .header-ubi {
+            height: 30vh;
+        }
+
+        .grid-contacto {
+            display: flex;
+            justify-content: center;
+            padding-top: 5rem;
+        }
+
+        iframe {
+            height: 85rem;
+            width: 80%;
+        }
+        
+        .grid-form {
+            height: 40rem;
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 20rem;
+            padding-bottom: 5rem;
+        }
+
+        textarea {
+            width: 60%;
+        }
+}
+
+*/
